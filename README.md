@@ -13,6 +13,7 @@
 * Node kuranlar ile madenciler iki ödülüde alır mı? -Evet, node ödülü alırsın ve ağda kazıdığın tokenler kadar (sayılar random) ödül alırsın.
 * En altta node kurduktan sonra madencilik hakkında rehberler olacak.
 * Solo miner ile pool arasında avantaj/dezavantaj nedir? - Belli değil, bu testnette belli olacak.
+* Solo miner ve madenci havuzu nedir öğrenmek istiyorsan: [Link](https://github.com/ruesandora/Ziesha-Network/blob/main/SoloMiner-MinerPool.md)
 * Benim önerim ekran kartınız yoksa (sanal sunucularda yok) madenci havuzuna katılın, solo miner zor.
 * Testnet 43200 blokta sonlanacak.
 * Nodu güncel olmayan cüzdanlar ödül alamayacak.
