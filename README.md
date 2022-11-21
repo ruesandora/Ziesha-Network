@@ -12,8 +12,11 @@
 * Madenci olmanın 3 yolu var: 1- Solo madencilik, 2- Madenci havuzuna dahil olup madenci olmak, 3- Madenci havuzunu oluşturmak
 * Node kuranlar ile madenciler iki ödülüde alır mı? -Evet, node ödülü alırsın ve ağda kazıdığın tokenler kadar (sayılar random) ödül alırsın.
 * En altta node kurduktan sonra madencilik hakkında rehberler olacak.
+* Solo miner ile pool arasında avantaj/dezavantaj nedir? - Belli değil, bu testnette belli olacak.
+* Benim önerim ekran kartınız yoksa (sanal sunucularda yok) madenci havuzuna katılın, solo miner zor.
 * Testnet 43200 blokta sonlanacak.
 * Nodu güncel olmayan cüzdanlar ödül alamayacak.
+* [Ziesha Türkiye](https://t.me/ZieshaNetworkTurkish) ve [Ziesha Discord](https://discord.gg/zieshanetwork)
 * Node rehberi ile başlıyoruz:
 
 ## Sistem gereksinimleri:
@@ -82,7 +85,8 @@ bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 
 ![image](https://user-images.githubusercontent.com/101149671/203009309-5f9d033e-453f-494a-8a49-39a6f41f8ffb.png)
 
-
+## Solo miner rehberi: [Link](https://github.com/ruesandora/Ziesha-Network/blob/main/solo-miner.md)
+## Miner pool rehber: [Link](https://github.com/ruesandora/Ziesha-Network/blob/main/mining-pool.md)
 
 
 
