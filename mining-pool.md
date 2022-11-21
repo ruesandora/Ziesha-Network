@@ -25,7 +25,7 @@ cargo install --path .
 
 * Havuzun IP'si ve mıner token kısmını doldurun:
 * Bunları yaparken havuz sahibi ile iletişimde olmalısınız.
-
+* Miner token bazuka node kurarken oluşturduğunuz cüzdan çıktısında yazıyor
 ```
 uzi-miner --pool --node HAVUZIPİSİ:8766 --threads 32 --miner-token MINER_TOKEN
 ```
