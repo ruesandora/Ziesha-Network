@@ -60,6 +60,7 @@ bazuka init --network groth --external IPADRESİ:8765 --bootstrap 65.108.193.133
 
 * Daha önce madenci olduysanız 12 kelimenizi import edebilirsiniz bu komutla:
 * Aynı zamanda node taşımak isterseniz eski mnemoniclerinizi (12 kelime) girmeniz yeterli, otomatik node taşınır.
+* DİKKAT - DİKKAT - DİKKAT: Yukarı okumadan bu komutu girmeyin!!!
 ```sh
 bazuka init --network groth --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765 --mnemonic "Eski MNEMONICLER"
 ```
