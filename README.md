@@ -44,7 +44,15 @@ rm ~/.bazuka.yaml
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt install -y build-essential libssl-dev cmake
+```
+
+* Bu komutu girince 1 yazıp enterleyin (seçenekler çıkınca)
+```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+```
+apt install git
 git clone https://github.com/ziesha-network/bazuka
 source "$HOME/.cargo/env"
 cd bazuka
