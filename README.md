@@ -31,8 +31,8 @@
 ## Sunucuzda daha önce Ziesha kurduysanız, eski adı Zeeka, silelim onu:
 * Bir şey kaydetmenize gerek yok
 ```
-systemctl stop  zeeka zoro uzi
-systemctl disable zeeka zoro uzi
+systemctl stop ziesha zoro uzi
+systemctl disable ziesha zoro uzi
 rm -rf /root/bazuka
 rm -rf /root/.bazuka-debug
 rm -rf /root/zoro
