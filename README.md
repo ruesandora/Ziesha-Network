@@ -63,14 +63,14 @@ cargo install --path .
 * Bu komutu girdikten sonra 12 kelime verecek size, not edin lütfen.
 * IPADRESİNİZİ girmeyi unutmayın
 ```
-bazuka init --network groth-3 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765
+bazuka init --network groth-4 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765
 ```
 
 * Daha önce madenci olduysanız 12 kelimenizi import edebilirsiniz bu komutla:
 * Aynı zamanda node taşımak isterseniz eski mnemoniclerinizi (12 kelime) girmeniz yeterli, otomatik node taşınır.
 * DİKKAT - DİKKAT - DİKKAT: Yukarı okumadan bu komutu girmeyin!!!
 ```sh
-bazuka init --network groth-3 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765 --mnemonic "Eski MNEMONICLER"
+bazuka init --network groth-4 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765 --mnemonic "Eski MNEMONICLER"
 ```
 
 ## Şimdi nodu çalıştıracağız:
