@@ -104,6 +104,10 @@ cd bazuka
 git pull origin master
 cargo update
 cargo install --path .
+screen -r ziesha
+```
+* Node güncellendikten sonra screen'e giriyoruz. `CTRL C` tuşlarıyla durdurup aşağıdaki kodla tekrar çalıştırıyoruz.
+```sh
 bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 ```
 
