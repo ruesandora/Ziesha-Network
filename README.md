@@ -16,6 +16,8 @@
 
 > Katıldığınız testnetin Repo'sunu forklamayı unutmayın, kesinlikle bir github hesabınız olsun ve katıldığınız testnetler hakkında profilde reponuz olsun.
 
+> Testnete 3 şekilde katılabiirsiniz, buradan kontrol edin.
+
 ## Sistem gereksinimleri:
 
 ```
@@ -109,14 +111,11 @@ bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 ## Bir kaç gün sonra devamını ekleyeceğim..
 
 
+## Testnete 3 şekilde katılabilirsiniz:
 
-
-
-
-
-
-
-
+* 1. Node kurabilirsiniz. (yukarı da ki rehber)
+* 2. Solo madencilik veya bir havuza katılarak madenci olabilirsiniz. (Madenci olmak için [buradan](https://github.com/ziesha-network/x-testnet#mine-ziesha-as-a-solo-miner))
+* 3. Madenci hazunun sahibi olabilirsiniz. (Havuz oluşturmak için [buradan](https://github.com/ziesha-network/x-testnet#mine-ziesha-in-a-mining-pool))
 
 
 
