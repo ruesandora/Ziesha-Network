@@ -16,7 +16,7 @@
 
 > Katıldığınız testnetin Repo'sunu forklamayı unutmayın, kesinlikle bir github hesabınız olsun ve katıldığınız testnetler hakkında profilde reponuz olsun.
 
-> Testnete 3 şekilde katılabiirsiniz, buradan kontrol edin.
+> Testnete 3 şekilde katılabiirsiniz, [buradan](https://github.com/ruesandora/Ziesha-Network/blob/main/README.md#testnete-3-%C5%9Fekilde-kat%C4%B1labilirsiniz) kontrol edin.
 
 ## Sistem gereksinimleri:
 
