@@ -9,7 +9,7 @@
 
 > [Github](https://github.com/ziesha-network), [Twitter](https://twitter.com/ZieshaNetwork), [Telegram](https://t.me/ZieshaNetworkOfficial) hesaplarını takip ettiğinizden emin olun, ana rehberde yazıyor, şart.
 
-> [Discord'dan](discord.gg/zieshanetwork) `Pelmeni-Testnet` rolü aldığınızdan emin olun. `#role-selection` kanalında mevcut
+> [Discord'dan](https://discord.gg/zieshanetwork) `Pelmeni-Testnet` rolü aldığınızdan emin olun. `#role-selection` kanalında mevcut
 
 > Testnet dışında ödül kazanmanız için [Quiz event etkinliği](https://twitter.com/ZieshaNetwork/status/1614997376892108803?s=20&t=NvIz0IWvWPi2Zn3LpI_8Ug) ve [Contributors](https://discord.com/channels/923604493378154496/1046481849163190343/1046482599415140452) olma şansı var, bu role şu an sadece 35 kişi sahip.
 
