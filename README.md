@@ -6,16 +6,15 @@
 
 ## Bu testnetnette yapacaklarımız ve önemli konular:
 
+> Öncelikle node'unuzun güncel olduğundan emin olun, eğer node'unuz testnet sürelerinde güncel değilse ağda `offline` olarak gözükürsünüz (explorer'da gözükseniz bile)
 
+> [Github](https://github.com/ziesha-network), [Twitter](https://twitter.com/ZieshaNetwork), [Telegram](https://t.me/ZieshaNetworkOfficial) hesaplarını takip ettiğinizden emin olun, ana rehberde yazıyor, şart.
 
+> [Discord'dan](discord.gg/zieshanetwork) `Pelmeni-Testnet` rolü aldığınızdan emin olun. `#role-selection` kanalında mevcut
 
+> Testnet dışında ödül kazanmanız için [Quiz event etkinliği](https://twitter.com/ZieshaNetwork/status/1614997376892108803?s=20&t=NvIz0IWvWPi2Zn3LpI_8Ug) ve [Contributors](https://discord.com/channels/923604493378154496/1046481849163190343/1046482599415140452) olma şansı var, bu role şu an sadece 35 kişi sahip.
 
-
-
-
-* Önceliklel olmayan cüzdanlar ödülden faydalanamıyor.
-* [Ziesha Türkiye](https://t.me/ZieshaNetworkTurkish) ve [Ziesha Discord](https://discord.gg/zieshanetwork)
-* Node rehberi ile başlıyoruz:
+> Katıldığınız testnetin Repo'sunu forklamayı unutmayın, kesinlikle bir github hesabınız olsun ve katıldığınız testnetler hakkında profilde reponuz olsun.
 
 ## Sistem gereksinimleri:
 
@@ -25,61 +24,52 @@
 20 SSD
 ```
 
-## Sunucuzda daha önce Ziesha kurduysanız, eski adı Zeeka, silelim onu:
-* Bir şey kaydetmenize gerek yok
-```
-systemctl stop ziesha zoro uzi
-systemctl disable ziesha zoro uzi
-rm -rf /root/bazuka
-rm -rf /root/.bazuka-debug
-rm -rf /root/zoro
-rm -rf /root/uzi
-rm ~/.bazuka.yaml
-```
 ## Kurulum:
-* Komutları tek tek girin:
+
 ```
 sudo apt-get update && sudo apt-get upgrade
-
+```
+```
 sudo apt install -y build-essential libssl-dev cmake
 ```
+```
+apt install git
+```
+```
+apt install screen
+```
 
-* Bu komutu girince 1 yazıp enterleyin (seçenekler çıkınca)
+> `rustup`'u kurduğunuzda `1-2-3` seçenekleri gelecek ve `1`'i seçip enterleyin.
+
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
 ```
-apt install git
-
 git clone https://github.com/ziesha-network/bazuka
 source "$HOME/.cargo/env"
+```
+```
 cd bazuka
 cargo install --path .
 ```
 
 ## Nodu başlatacağız:
-* Bu komutu girdikten sonra 12 kelime verecek size, not edin lütfen.
-* IPADRESİNİZİ girmeyi unutmayın
-```
-bazuka init --network groth-6 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765
-```
+> bazuka init komutunu girerken eğer daha önce cüzdan oluşturduysanız ve 12 kelimeniz varsa komutun sonuna --mnemonic "mnemonic" ekleyin.
 
-* Daha önce madenci olduysanız 12 kelimenizi import edebilirsiniz bu komutla:
-* Aynı zamanda node taşımak isterseniz eski mnemoniclerinizi (12 kelime) girmeniz yeterli, otomatik node taşınır.
-* DİKKAT - DİKKAT - DİKKAT: Yukarı okumadan bu komutu girmeyin!!!
+> Eğer 12 kelimeniz yoksa komutu direkt girdiğinizde size 12 kelime verecek onu saklayın. Veya [buradan](http://ziesha.network/zeejs/) oluşturabilirsiniz
+
+> IPADRESİNİZİ girmeyi unutmayın!
+
 ```sh
-bazuka init --network groth-6 --external IPADRESİ:8765 --bootstrap 65.108.193.133:8765 --mnemonic "Eski MNEMONICLER"
+bazuka init --network pelmeni --external IPADRESİ:8765 --bootstrap 213.14.138.127:8765
 ```
 
 ## Şimdi nodu çalıştıracağız:
 
-* Tırnak içersine discord adınızı girin
-* Ziesha'nın discordunda olmak zorundasınız: [Link](https://discord.gg/zieshanetwork)
+> Tırnak içersine discord adınızı girin. örnek `"Rues#9144"`
 
 ```
-apt install screen
-screen -S bazuka
+screen -S ziesha
 ```
 
 ```sh
@@ -88,19 +78,35 @@ bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 
 ## Çalıştığını nasıl anlarız?
 
-* Görselde ki gibi olacak
-* Ama bu görsel ağ başlamadan önce ki hali
-* Siz ağ başladıktan sonra kuracağınız için height ve acitve nodes sayısı artacak
-* Artmazsa sorun vardır. (ağ başlar başlamaz artmaz, bir kaç blok üretildikten sonra)
+> `bazuke node start` komutunu girdikten ve bir kaç dakika bekledikten sonra görselde ki gibi gözükecektir.
 
-![image](https://user-images.githubusercontent.com/101149671/203009309-5f9d033e-453f-494a-8a49-39a6f41f8ffb.png)
+![image](https://user-images.githubusercontent.com/101149671/215362906-ab86fec5-77b5-4a6d-b951-104525cf1b3d.png)
 
-## Solo miner rehberi: [Link](https://github.com/ruesandora/Ziesha-Network/blob/main/solo-miner.md)
-## Miner pool rehber: [Link](https://github.com/ruesandora/Ziesha-Network/blob/main/mining-pool.md)
+> `Height` 1-2-3 şeklinde, `Node count` 1-2-3 şeklinde artmaya başlayacak.
 
+## Faydalı komutlar:
 
+> Node'umuzu ziesha adlı `screen` içersinde çalıştırdık:
 
+* Node çalıştıktan sonra screen'den çıkmak için `CTRL A D` tuşlarına basıyoruz.
+* Tekrar bu screen içersine girmek için `screen -r ziesha` komutunu giriyoruz.
+* Eğer bu komut ile screen içersine giremezseniz `screen -d -r ziesha` 'yı kullanabilirsiniz.
+* Screen'i silmek için `screen -XS screen adı quit` ve tüm screenleri silmek için `pkill screen`.
+* Yeni screen açmak için `screen -S screen adı`
 
+> Güncelleme komutu:
+
+* Bu komut her güncelleme için geçerli değildir, lütfen güncellemeler için `#pelmeni-testnet` kanalını takip edin.
+
+```sh
+cd bazuka
+git pull origin master
+cargo update
+cargo install --path .
+bazuka node start --discord-handle "YOUR DISCORD HANDLE"
+```
+
+## Bir kaç gün sonra devamını ekleyeceğim..
 
 
 
