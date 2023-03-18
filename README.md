@@ -40,7 +40,7 @@ rm -rf /root/uzi
 rm ~/.bazuka.yaml
 ```
 ## Kurulum:
-* Komutları tek tek girin:
+* Komutları tek tek girelim:
 ```
 sudo apt-get update && sudo apt-get upgrade
 sudo apt install -y build-essential libssl-dev cmake
