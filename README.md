@@ -1,34 +1,29 @@
-<h1 align="center"> ℤiesha Network | The Pelmeni Testnet </h1>
-
-![image](https://user-images.githubusercontent.com/101149671/215441281-fcccd88d-68c9-4ee7-b967-cc0e00824ae5.png)
+<h1 align="center"> Ziesha Network | Deruny Testnet </h1>
 
 
-## Bu testnetnette yapacaklarımız ve önemli konular:
+<h1 align="center"> Bu testnetnette yapacaklarımız ve önemli konular </h1>
 
 > Öncelikle node'unuzun güncel olduğundan emin olun, eğer node'unuz testnet sürelerinde güncel değilse ağda `offline` olarak gözükürsünüz (explorer'da gözükseniz bile)
 
-> [Github](https://github.com/ziesha-network), [Twitter](https://twitter.com/ZieshaNetwork), [Telegram](https://t.me/ZieshaNetworkOfficial) hesaplarını takip ettiğinizden emin olun, ana rehberde yazıyor, şart.
+> [Github](https://github.com/ziesha-network), [Twitter](https://twitter.com/ZieshaNetwork), [Telegram](https://t.me/ZieshaNetworkOfficial) hesaplarını takip ettiğinizden emin olun.
 
-> [Discord'dan](discord.gg/zieshanetwork) `Pelmeni-Testnet` rolü aldığınızdan emin olun. `#role-selection` kanalında mevcut
-
-> Testnet dışında ödül kazanmanız için [Quiz event etkinliği](https://twitter.com/ZieshaNetwork/status/1614997376892108803?s=20&t=NvIz0IWvWPi2Zn3LpI_8Ug) ve [Contributors](https://discord.com/channels/923604493378154496/1046481849163190343/1046482599415140452) olma şansı var, bu role şu an sadece 35 kişi sahip.
+> [Discord'dan](discord.gg/zieshanetwork) `Deruny-Testnet` rolü aldığınızdan emin olun. `#role-selection` kanalında mevcut
 
 > Katıldığınız testnetin Repo'sunu forklamayı unutmayın, kesinlikle bir github hesabınız olsun ve katıldığınız testnetler hakkında profilde reponuz olsun.
 
-> Testnete 3 şekilde katılabiirsiniz, [buradan](https://github.com/ruesandora/Ziesha-Network/blob/main/README.md#testnete-3-%C5%9Fekilde-kat%C4%B1labilirsiniz) kontrol edin.
+<h1 align="center"> Sistem Gereksinimleri </h1>
 
-## Sistem gereksinimleri:
-
+>  Hetzner'in en küçük sunucusu yeterli, [Hetzner Rehberi Linki](https://github.com/ruesandora/Hetzner/blob/main/README.md)
 ```
 2 CPU
 2 RAM
 20 SSD
 ```
 
-## Kurulum:
+<h1 align="center"> Kurulum </h1>
 
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade -y
 ```
 ```
 sudo apt install -y build-essential libssl-dev cmake
@@ -52,9 +47,12 @@ source "$HOME/.cargo/env"
 ```
 cd bazuka
 cargo install --path .
+
+# cargo yüklemesi biraz uzun dakika sürebilir.
 ```
 
-## Nodu başlatacağız:
+<h1 align="center"> Node'u başlatalım </h1>
+
 > bazuka init komutunu girerken eğer daha önce cüzdan oluşturduysanız ve 12 kelimeniz varsa komutun sonuna --mnemonic "mnemonic" ekleyin.
 
 > Eğer 12 kelimeniz yoksa komutu direkt girdiğinizde size 12 kelime verecek onu saklayın. Veya [buradan](http://ziesha.network/zeejs/) oluşturabilirsiniz
@@ -62,22 +60,21 @@ cargo install --path .
 > IPADRESİNİZİ girmeyi unutmayın!
 
 ```sh
-bazuka init --network pelmeni --external IPADRESİ:8765 --bootstrap 213.14.138.127:8765
+bazuka init --external 5.75.182.65:8765 --bootstrap 31.210.53.186:8765
 ```
 
-## Şimdi nodu çalıştıracağız:
+<h1 align="center"> Node'u çalıştıralım </h1>
 
 > Tırnak içersine discord adınızı girin. örnek `"Rues#9144"`
 
 ```
 screen -S ziesha
 ```
-
 ```sh
-bazuka node start --discord-handle "YOUR DISCORD HANDLE"
+bazuka node start --discord-handle "Rues"
 ```
 
-## Çalıştığını nasıl anlarız?
+<h1 align="center"> Çalıştığını nasıl anlarız? </h1>
 
 > `bazuke node start` komutunu girdikten ve bir kaç dakika bekledikten sonra görselde ki gibi gözükecektir.
 
@@ -85,7 +82,7 @@ bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 
 > `Height` 1-2-3 şeklinde, `Node count` 1-2-3 şeklinde artmaya başlayacak.
 
-## Faydalı komutlar:
+<h1 align="center"> Faydalı komutlar </h1>
 
 > Node'umuzu ziesha adlı `screen` içersinde çalıştırdık:
 
@@ -97,7 +94,7 @@ bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 
 > Güncelleme komutu:
 
-* Bu komut her güncelleme için geçerli değildir, lütfen güncellemeler için `#pelmeni-testnet` kanalını takip edin.
+* Bu komut her güncelleme için geçerli değildir, lütfen güncellemeler için `#deruny-testnet` kanalını takip edin.
 
 ```sh
 cd bazuka
@@ -111,17 +108,15 @@ screen -r ziesha
 bazuka node start --discord-handle "YOUR DISCORD HANDLE"
 ```
 
-## Bir kaç gün sonra devamını ekleyeceğim..
+<h1 align="center"> Validatör ve Prover hakkında </h1>
 
+> Validatör olmak istiyorsanız donanımda herhangi bir değişiklik yok.
+>> Token'e ihtiyacınız var bunun için faucet'i kullanabilirsiniz. Aynı zamanda ağda bir kaç işlem yapın.
+>>> Validatör nasıl olunur hakkında gün içinde discordda duyuru gelecek.
 
-## Testnete 3 şekilde katılabilirsiniz:
-
-* 1. Node kurabilirsiniz. (yukarı da ki rehber)
-* 2. Solo madencilik veya bir havuza katılarak madenci olabilirsiniz. (Madenci olmak için [buradan](https://github.com/ziesha-network/x-testnet#mine-ziesha-as-a-solo-miner))
-* 3. Madenci hazunun sahibi olabilirsiniz. (Havuz oluşturmak için [buradan](https://github.com/ziesha-network/x-testnet#mine-ziesha-in-a-mining-pool))
-
-
-
+> Prover olmak isteyenler için GPU'ya ihtiyaçları var.
+>> Prover olmak isteyenler prover kanalından diğer proverler ile veya chate yazarak kurulum yapabilir.
+>>> Hepsi burada mevcut: https://github.com/ziesha-network/
 
 
 
