@@ -48,7 +48,7 @@ source "$HOME/.cargo/env"
 cd bazuka
 cargo install --path .
 
-# cargo yüklemesi biraz uzun dakika sürebilir.
+# cargo yüklemesi biraz uzun (birkaç dakika) sürebilir.
 ```
 
 <h1 align="center"> Node'u başlatalım </h1>
